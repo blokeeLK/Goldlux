@@ -866,6 +866,21 @@
   
 /* override: remove product image border */
 .prod .img{border:none;background:transparent;box-shadow:none;}
+
+/* override: remove square behind product image */
+.prod .img{
+  background: none !important;
+  box-shadow: none !important;
+}
+.prod .img::before,
+.prod .img::after{
+  display:none !important;
+}
+.prod .img > div{
+  background:none !important;
+  box-shadow:none !important;
+}
+
 </style>
 </head>
 
