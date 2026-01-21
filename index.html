@@ -882,10 +882,20 @@
 }
 
 
-/* FINAL override: remove blue overlay above product can */
-.prod .img .miniPack,
-.prod .img .miniPack *{
+
+
+
+/* FIX: remove only the blue background shape, keep the product image */
+.prod .img{
+  background:none !important;
+}
+.prod .img::before,
+.prod .img::after{
   display:none !important;
+}
+.prod .img .miniPack{
+  background:none !important;
+  box-shadow:none !important;
 }
 
 </style>
